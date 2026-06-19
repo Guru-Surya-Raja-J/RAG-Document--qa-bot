@@ -1,0 +1,25 @@
+|-- .env
+|-- .gitignore
+|-- data
+    |-- Guru_Surya_Raja_Resume_ATS.pdf
+    |-- MERN Stack Deployment Documentation.docx
+|-- db
+    |-- chroma.sqlite3
+    |-- f08289ab-c6c3-442e-8fa2-f9a2214520b9
+        |-- data_level0.bin
+        |-- header.bin
+        |-- length.bin
+        |-- link_lists.bin
+|-- README.md
+|-- requirements.txt
+|-- src
+    |-- config.py
+    |-- ingest.py
+    |-- main.py
+    |-- query.py
+    |-- __init__.py
+    |-- __pycache__
+        |-- config.cpython-313.pyc
+        |-- ingest.cpython-313.pyc
+        |-- query.cpython-313.pyc
+        |-- __init__.cpython-313.pyc
