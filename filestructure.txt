@@ -2,7 +2,6 @@
 |-- .gitignore
 |-- data
     |-- Guru_Surya_Raja_Resume_ATS.pdf
-    |-- MERN Stack Deployment Documentation.docx
 |-- db
     |-- chroma.sqlite3
     |-- f08289ab-c6c3-442e-8fa2-f9a2214520b9
