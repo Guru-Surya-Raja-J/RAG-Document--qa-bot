@@ -5,9 +5,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import chromadb
 from google import genai
 from dotenv import load_dotenv
-from config import GEMINI_API_KEY, DB_PATH, COLLECTION_NAME, TOP_K, GENERATION_MODEL
 
 load_dotenv()
+
+# Get API key — works both locally and on Streamlit Cloud
+try:
+    import streamlit as st
+    GEMINI_API_KEY = st.secrets.get("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY")
+except:
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+
+from config import DB_PATH, COLLECTION_NAME, TOP_K, GENERATION_MODEL
+
 client_genai = genai.Client(api_key=GEMINI_API_KEY)
 
 def get_query_embedding(text: str) -> list:
